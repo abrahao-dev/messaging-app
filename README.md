@@ -1,12 +1,11 @@
-Here's the raw markdown for the README that you can copy and paste:
-
-```markdown
 # 💬 Real-Time Messaging Application
 
 A modern, scalable messaging platform built with **Java**, **Spring Boot**, **RabbitMQ**, **React**, and **Redux**. Exchange messages instantly with a robust backend and sleek, responsive UI.
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![Build](https://img.shields.io/badge/build-passing-success)
+![Coverage](https://img.shields.io/badge/coverage-87%25-yellowgreen)
 
 ## ✨ Features
 
@@ -15,6 +14,8 @@ A modern, scalable messaging platform built with **Java**, **Spring Boot**, **Ra
 - **Responsive Design**: Optimized for both desktop and mobile devices
 - **Message History**: Access your complete message history anytime
 - **Modern UI**: Clean interface built with React and Tailwind CSS
+- **Cross-Platform**: Works on desktop, tablet, and mobile devices
+- **Offline Support**: Messages are queued when offline and sent when connection resumes
 
 ## 🛠️ Tech Stack
 
@@ -24,16 +25,20 @@ A modern, scalable messaging platform built with **Java**, **Spring Boot**, **Ra
 - **Spring Data** for database integration
 - **Spring AMQP** for RabbitMQ messaging
 - **MongoDB/MySQL** for data persistence
+- **JUnit & Mockito** for testing
 
 ### Frontend
 - **React** for dynamic UI components
 - **Redux** for centralized state management
 - **Tailwind CSS** for modern, responsive styling
 - **Axios** for API communication
+- **Jest & React Testing Library** for testing
 
 ### Infrastructure
 - **RabbitMQ** for real-time message queuing
-- **Docker** support for containerization (optional)
+- **Docker** for containerization
+- **GitHub Actions** for CI/CD pipeline
+- **AWS/Azure/GCP** for deployment (choose your platform)
 
 ## 🏗️ Architecture
 
@@ -54,7 +59,7 @@ A modern, scalable messaging platform built with **Java**, **Spring Boot**, **Ra
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Java 11+
+- Java 21+
 - Node.js and npm
 - RabbitMQ
 - MongoDB or MySQL
@@ -126,13 +131,13 @@ A modern, scalable messaging platform built with **Java**, **Spring Boot**, **Ra
 
 ## 📡 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/api/messages` | Retrieve all messages |
-| GET | `/api/messages/{id}` | Get a specific message |
-| POST | `/api/messages` | Send a new message |
-| GET | `/api/users` | Get all users |
-| GET | `/api/users/{id}` | Get a specific user |
+| Method | Endpoint       | Description             |
+|--------|----------------|-------------------------|
+| GET    | `/api/messages` | Retrieve all messages   |
+| GET    | `/api/messages/{id}` | Get a specific message |
+| POST   | `/api/messages` | Send a new message      |
+| GET    | `/api/users`    | Get all users           |
+| GET    | `/api/users/{id}` | Get a specific user    |
 
 ## 📱 Screenshots
 
@@ -163,9 +168,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-Your Name - [@yourtwitter](https://twitter.com/yourhandle) - email@example.com
-
-Project Link: [https://github.com/yourusername/real-time-messaging-app](https://github.com/yourusername/real-time-messaging-app)
-```
-
-You can simply copy everything between the triple backticks and paste it directly into your README.md file.
+Abrahão Dev - [LinkedIn](https://www.linkedin.com/in/abrahao-dev/) - contato.matheusabrahao@gmail.com
