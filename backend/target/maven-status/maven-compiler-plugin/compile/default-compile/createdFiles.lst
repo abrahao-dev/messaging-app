@@ -1,0 +1,8 @@
+com/example/demo/service/MessageReceiver.class
+com/example/demo/service/MessageService.class
+com/example/demo/DemoApplication.class
+com/example/demo/controller/MessageController.class
+com/example/demo/repository/MessageRepository.class
+com/example/demo/service/MessageSender.class
+com/example/demo/config/RabbitMQConfig.class
+com/example/demo/model/Message.class

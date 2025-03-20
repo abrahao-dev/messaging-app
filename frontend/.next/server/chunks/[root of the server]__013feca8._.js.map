@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
+    {"offset": {"line": 60, "column": 0}, "map": {"version":3,"sources":["file:///Users/matheusalvares/Documents/Github/messaging-app/src/app/api/messages/route.ts"],"sourcesContent":["// src/app/api/messages/route.ts\nimport { NextResponse } from 'next/server';\n\n// Dummy data for the messages\nconst messages = [\n  { id: 1, content: 'Hello, world!' },\n  { id: 2, content: 'How are you doing?' },\n  { id: 3, content: 'Next.js is awesome!' },\n];\n\nexport async function GET() {\n  // Returning the messages as a JSON response\n  return NextResponse.json(messages);\n}\n\nexport async function POST(request: Request) {\n  const { content } = await request.json();\n  // Here, you would save the message to a database or do any processing\n  const newMessage = { id: Date.now(), content };\n  messages.push(newMessage);  // Temporarily adding the message to the array\n  return NextResponse.json(newMessage);\n}\n"],"names":[],"mappings":"AAAA,gCAAgC;;;;;AAChC;;AAEA,8BAA8B;AAC9B,MAAM,WAAW;IACf;QAAE,IAAI;QAAG,SAAS;IAAgB;IAClC;QAAE,IAAI;QAAG,SAAS;IAAqB;IACvC;QAAE,IAAI;QAAG,SAAS;IAAsB;CACzC;AAEM,eAAe;IACpB,4CAA4C;IAC5C,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;AAC3B;AAEO,eAAe,KAAK,OAAgB;IACzC,MAAM,EAAE,OAAO,EAAE,GAAG,MAAM,QAAQ,IAAI;IACtC,sEAAsE;IACtE,MAAM,aAAa;QAAE,IAAI,KAAK,GAAG;QAAI;IAAQ;IAC7C,SAAS,IAAI,CAAC,aAAc,8CAA8C;IAC1E,OAAO,gIAAA,CAAA,eAAY,CAAC,IAAI,CAAC;AAC3B","debugId":null}}]
+}
